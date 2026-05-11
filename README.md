@@ -9,7 +9,7 @@ FlowGate é uma engine de workflows empresariais desenvolvida para automatizar p
 | Módulo | Descrição | Repositório |
 |--------|-----------|-------------|
 | **FlowGate.Core** | Backend .NET 8 Web API + PostgreSQL | [Ver repo](https://github.com/NicolasEstrella/FlowGate.Core) |
-| **FlowGate.Portal** | Frontend React + TypeScript | [Ver repo](https://github.com/NicolasEstrella/FlowGate.Portal) |
+| **FlowGate.Portal** | Frontend Angular + TypeScript | [Ver repo](https://github.com/NicolasEstrella/FlowGate.Portal) |
 | **FlowGate.Infra** | Docker Compose (ambiente local completo) | [Ver repo](https://github.com/NicolasEstrella/FlowGate.Infra) |
 
 ## Stack
@@ -17,14 +17,14 @@ FlowGate é uma engine de workflows empresariais desenvolvida para automatizar p
 | Camada | Tecnologias |
 |--------|------------|
 | **Backend** | .NET 8, ASP.NET Core, EF Core, MassTransit, RabbitMQ |
-| **Frontend** | React, TypeScript, TailwindCSS, React Flow |
+| **Frontend** | Angular, TypeScript, SCSS |
 | **Banco** | PostgreSQL, Redis |
 | **Infra** | Docker, Docker Compose, NGINX, MinIO |
 
 ## Arquitetura (visão geral)
 
 ```
-Frontend (React)
+Frontend (Angular)
      ↓
 API Gateway (NGINX)
      ↓

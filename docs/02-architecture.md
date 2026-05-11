@@ -5,7 +5,7 @@
 | Camada | Tecnologias |
 |--------|------------|
 | **Backend** | C#, ASP.NET Core, Entity Framework Core, MassTransit |
-| **Frontend** | React, TypeScript, TailwindCSS, React Flow |
+| **Frontend** | Angular, TypeScript, SCSS |
 | **Mensageria** | RabbitMQ |
 | **Banco principal** | PostgreSQL |
 | **Cache** | Redis |
@@ -19,10 +19,10 @@
 
 ```mermaid
 graph TB
-    subgraph Frontend["Frontend — React"]
-        UI[React + TypeScript]
-        RF[React Flow\nVisualização de Workflows]
-        UI --- RF
+    subgraph Frontend["Frontend — Angular"]
+        UI[Angular + TypeScript]
+        WF[Portal Web\nFluxos e Aprovações]
+        UI --- WF
     end
 
     subgraph Gateway["API Gateway"]

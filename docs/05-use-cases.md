@@ -14,6 +14,7 @@ sequenceDiagram
     participant API as FlowGate API
     participant WE as Workflow Engine
     participant RE as Rule Engine
+    participant DB as PostgreSQL
     participant MQ as RabbitMQ
     participant NS as Notification Worker
     actor G as Gerente

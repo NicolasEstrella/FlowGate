@@ -1,0 +1,9 @@
+[submodule "FlowGate.Core"]
+	path = FlowGate.Core
+	url = https://github.com/NicolasEstrella/FlowGate.Core
+[submodule "FlowGate.Portal"]
+	path = FlowGate.Portal
+	url = https://github.com/NicolasEstrella/FlowGate.Portal
+[submodule "FlowGate.Infra"]
+	path = FlowGate.Infra
+	url = https://github.com/NicolasEstrella/FlowGate.Infra

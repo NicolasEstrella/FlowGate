@@ -20,7 +20,7 @@ sequenceDiagram
     actor G as Gerente
     actor FIN as Financeiro
     participant DS as Document Worker
-    participant MN as MinIO
+    participant FS as Volume Local
 
     F->>API: POST /api/requests\n{tipo: reembolso, valor: 6000}
     API->>WE: Iniciar workflow
@@ -44,7 +44,7 @@ sequenceDiagram
     WE->>MQ: RequestCompletedEvent
     MQ->>DS: Gerar comprovante de aprovação
     DS->>DS: Montar PDF com dados + QRCode
-    DS->>MN: Salvar documento
+    DS->>FS: Salvar documento
     MQ->>NS: Notificar Funcionário
     NS-->>F: 📧 "Reembolso aprovado! Pagamento em até 3 dias úteis."
 ```

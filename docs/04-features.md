@@ -136,7 +136,7 @@ sequenceDiagram
 | DOCX | Documentos Word editáveis |
 | Templates dinâmicos | Preenchimento automático com dados do workflow |
 | QRCode de validação | QRCode único para verificar autenticidade do documento |
-| Armazenamento | Documentos salvos no MinIO (compatível com S3) |
+| Armazenamento | Documentos salvos em volume local (filesystem montado via Docker) |
 | Versionamento | Múltiplas versões de um mesmo documento |
 
 ---

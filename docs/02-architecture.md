@@ -9,7 +9,7 @@
 | **Mensageria** | RabbitMQ |
 | **Banco principal** | PostgreSQL |
 | **Cache** | Redis |
-| **Armazenamento** | MinIO (S3-compatible local) |
+| **Armazenamento** | Volume Local (filesystem montado via Docker) |
 | **Gateway** | NGINX |
 | **Infra** | Docker, Docker Compose |
 
@@ -56,7 +56,7 @@ graph TB
     end
 
     subgraph Storage["Armazenamento"]
-        MN[MinIO\nDocumentos + Anexos]
+        FS[Volume Local\nDocumentos + Anexos]
     end
 
     Frontend --> Gateway
@@ -121,7 +121,7 @@ graph LR
         EF[EF Core\nRepositories]
         MT[MassTransit\nPublishers]
         RC[Redis Cache]
-        MN[MinIO Client]
+        FS[FileSystem\nLocal Volume]
     end
 
     subgraph Events["Event Handlers"]

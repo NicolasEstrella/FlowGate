@@ -224,7 +224,7 @@ graph LR
 
     WE -->|Publica Evento| MQ
     WN -->|Email/Push| EXT[Serviços Externos]
-    WD -->|PDF/DOCX| MN[MinIO]
+    WD -->|PDF/DOCX| FS[Volume Local]
     WES -->|Reatribui| WE
 ```
 
